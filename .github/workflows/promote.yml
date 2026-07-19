@@ -27,12 +27,12 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Verify upstream naming and branding status
+      - name: Verify project identity status
         run: |
           status="$(sed -n 's/^UPSTREAM_NAMING_STATUS=//p' project.properties)"
           [[ "$status" == "approved" ]] || {
-            echo "Stable release is blocked while upstream naming status is: ${status:-missing}" >&2
-            echo "Record Mol* maintainer guidance in docs/project/naming-and-branding.md and approve the gate in the same reviewed commit." >&2
+            echo "Stable release is blocked while project identity status is: ${status:-missing}" >&2
+            echo "Restore the approved project identity record in docs/project/naming-and-branding.md and project.properties." >&2
             exit 1
           }
 

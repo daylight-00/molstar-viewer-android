@@ -1,12 +1,12 @@
 # User guide
 
-Mol* Viewer for Android packages the official Mol* Viewer runtime in an Android application and connects it to Android's file and sharing workflows.
+Mol* Viewer for Android packages the upstream Mol* Viewer runtime in an Android application and connects it to Android's file and sharing workflows.
 
 ## Installation status
 
-A public stable APK has not been released yet. Stable packages will appear on the repository's GitHub Releases page only after Mol* maintainer naming and branding guidance is recorded, permanent signing is verified, and the exact release commit is approved on a real Android device.
+A public stable APK has not been released yet. Stable packages will appear on the repository's GitHub Releases page only after permanent signing is verified and the exact release commit is approved on a real Android device.
 
-GitHub Actions artifacts are development builds. They may be useful for testing, but they are not long-lived stable packages and should not be redistributed as official releases.
+GitHub Actions artifacts are development builds. They may be useful for testing, but they are not long-lived stable packages and should not be redistributed as stable releases.
 
 ## Opening files
 

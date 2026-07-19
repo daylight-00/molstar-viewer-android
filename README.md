@@ -1,17 +1,17 @@
 # Mol* Viewer for Android
 
-[![CI](https://github.com/daylight-00/molstar-viewer-android/actions/workflows/ci.yml/badge.svg)](https://github.com/daylight-00/molstar-viewer-android/actions/workflows/ci.yml)
+[![CI](https://github.com/molstar/molstar-viewer-android/actions/workflows/ci.yml/badge.svg)](https://github.com/molstar/molstar-viewer-android/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-An independently maintained Android host for the official Mol* Viewer runtime.
+Mol* Viewer packaged as an Android application with native device-file integration.
 
 The application packages the upstream prebuilt Viewer without modifying Mol* JavaScript, CSS, molecular formats, rendering, state management, or normal Viewer UI. The Android layer adds device-file integration, lifecycle handling, system insets, theme signals, and bounded startup recovery.
 
-> **Mol* Viewer for Android** is independently maintained and is not presented as an official Mol* release. The current project title and installed application name **Mol* Viewer** remain subject to naming and branding guidance from the Mol* maintainers.
+This project is maintained in the Mol* GitHub organization by David Hyunyoo Jang.
 
 ## Project status
 
-The source repository and continuous-integration pipeline are public. A stable APK has not been published yet. The first stable release is blocked until Mol* maintainer naming and branding guidance is recorded, the permanent signing identity is verified, and the exact release commit is approved on a real Android device.
+The source repository and continuous-integration pipeline are public. A stable APK has not been published yet. The first stable release requires verification of the permanent signing identity and approval of the exact release commit on a real Android device.
 
 GitHub Actions candidate artifacts are development builds. They are not substitutes for a signed stable release and may use a debug signing identity.
 
@@ -33,7 +33,7 @@ Files are transported to browser `File` objects with their original names and MI
 ```text
 Layer 3  one explicit mobile policy: hide the non-live log panel
 Layer 2  Android lifecycle, files, theme, recovery, and stable bridge
-Layer 1  official prebuilt Mol* Viewer runtime, vendored unmodified
+Layer 1  upstream prebuilt Mol* Viewer runtime, vendored unmodified
 ```
 
 Mol* owns molecular parsing, decompression, representations, selections, rendering, analysis, state, and the normal user interface. See [the architecture document](docs/development/architecture.md) for the complete boundary.
@@ -51,7 +51,7 @@ Mol* owns molecular parsing, decompression, representations, selections, renderi
 - [Developer documentation](docs/development/README.md)
 - [Upstream Mol* synchronization](docs/development/upstream-molstar.md)
 - [Automation and releases](docs/development/automation.md)
-- [Naming, branding, and upstream guidance](docs/project/naming-and-branding.md)
+- [Project identity and upstream hosting](docs/project/naming-and-branding.md)
 - [Security policy](SECURITY.md)
 
 Owner-specific operational procedures are maintained separately from this public repository.
@@ -66,7 +66,7 @@ Prerequisites:
 - Bash and standard Unix command-line tools.
 
 ```bash
-git clone https://github.com/daylight-00/molstar-viewer-android.git
+git clone https://github.com/molstar/molstar-viewer-android.git
 cd molstar-viewer-android
 nvm install
 nvm use
